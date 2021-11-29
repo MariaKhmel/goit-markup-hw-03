@@ -116,6 +116,7 @@ body {
 }
 
 /*Button*/
+
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -125,36 +126,20 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-
-.button:hover,
-.button:focus {
-  color: var(--secondary-accent-color);
-  background-color: var(--accent-text-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
+.button .secondary {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
 }
-.button-hero {
+
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--secondary-accent-color);
   background-color: var(--accent-text-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-height: 200px;
-  border: 1px solid transparent;
+}
+.button.primary {
+  color: var(--secondary-accent-color);
+  background-color: var(--accent-text-color);
+}
 
 /* Footer */
 a {
