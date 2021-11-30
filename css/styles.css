@@ -143,12 +143,22 @@ p {
   margin-bottom: 50px;
 }
 
+.title.team {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: none;
+}
+
 .work-list {
   margin-bottom: 94px;
 }
 /*Button*/
 
 .button {
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -156,11 +166,15 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border: 1px solid transparent;
 }
-.button .secondary {
+.button.secondary {
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
 }
 
 .button.secondary:hover,
@@ -171,9 +185,6 @@ p {
 .button.primary {
   color: var(--secondary-accent-color);
   background-color: var(--accent-text-color);
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
 }
 
 /* Footer */
