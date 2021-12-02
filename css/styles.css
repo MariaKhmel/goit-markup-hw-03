@@ -131,16 +131,13 @@ p {
 .team-section {
   background-color: var(--secondary-background-color);
 }
-.title {
+.section-title {
   color: var(--primary-text-color);
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .title.team {
