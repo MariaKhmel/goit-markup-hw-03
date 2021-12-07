@@ -47,6 +47,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+header{
+   border-bottom: 1px solid #ececec;
+}
 
 /* Logo */
 .logo {
@@ -78,7 +81,7 @@ img {
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
+
 }
 .site-nav,
 .contact-nav {
@@ -137,7 +140,7 @@ img {
 /*Hero*/
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   background-color: var(--background-color);
   text-align: center;
 }
@@ -168,10 +171,12 @@ img {
   justify-content: center;
   margin-bottom: 10px;
 }
+.feature-list .list-item:not(:last-child),
+.work-list .list-item:not(:last-child) {
+  padding-right: 30px;
+}
 
-.text.feature:not(:last-child),
-.work-list > .item:not(:last-child),
-.team-list > .item:not(:last-child) {
+.text.feature:not(:last-child) {
   padding-left: 30px;
 }
 
@@ -199,14 +204,16 @@ img {
 
   margin-bottom: 50px;
 }
+.title .team{
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+}
 
 .team-list {
   display: flex;
 }
 
-.title.team {
-  margin-top: 30px;
-  margin-bottom: 30px;
 
   color: var(--primary-text-color);
 
@@ -218,11 +225,18 @@ img {
 
 .work-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .work-list > .text {
   width: 130px;
+}
+.team-list .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 /*Button*/
@@ -240,7 +254,9 @@ img {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
+  
 }
+
 
 .button.primary {
   color: var(--secondary-accent-color);
@@ -286,7 +302,7 @@ a {
   padding-bottom: 60px;
 }
 
-.address {
+.address-link {
   margin-bottom: 9px;
   color: var(--secondary-accent-color);
 
@@ -294,11 +310,11 @@ a {
   line-height: 1.7;
   font-style: normal;
 }
-.mail {
-  margin-bottom: 9px;
+.mail-link {
+ margin-bottom: 9px;
 }
-.mail,
-.phone {
+.mail-link,
+.phone-link {
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
@@ -313,8 +329,8 @@ a {
   justify-content: center;
 }
 
-.list.buttons > .item:not(:last-child) {
-  margin-right: 52px;
+.buttons .item-list:not(:last-child) {
+  margin-right: 8px;
 }
 
 .card-set {
@@ -339,7 +355,7 @@ a {
   box-sizing: border-box;
 }
 .portfolio-item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 .portfolio-title {
@@ -348,8 +364,7 @@ a {
   font-size: 16px;
   line-height: 1.9;
 
-  margin-top: 20px;
-  margin-bottom: 4px;
+  
 }
 
 .portfolio-text {
@@ -358,7 +373,7 @@ a {
   font-size: 16px;
   line-height: 1.9;
 
-  padding-bottom: 20px;
+
 }
 .hidden {
   width: 1px;
