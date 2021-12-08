@@ -218,6 +218,9 @@ header{
 .work-list {
   display: flex;
 }
+.work-list {
+  padding-bottom: 94px;
+}
 
 
 
