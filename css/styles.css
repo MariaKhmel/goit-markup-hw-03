@@ -47,6 +47,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 header{
    border-bottom: 1px solid #ececec;
 }
